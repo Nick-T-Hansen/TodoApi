@@ -40,6 +40,7 @@ namespace TodoApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseFileServer();
             app.UseHttpsRedirection();
 
             app.UseRouting();
