@@ -12,7 +12,7 @@ namespace TodoApi.Models
             : base(options)
         {
         }
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<TodoItem> TodoItem { get; set; }
     }
 }
 
