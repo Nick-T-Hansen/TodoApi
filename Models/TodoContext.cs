@@ -6,9 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Models
 {
-    public class TodoContext : DbContext
+    public class TodoItemContext : DbContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options)
+        public TodoItemContext()
+        {
+
+        }
+
+        public TodoItemContext(DbContextOptions<TodoItemContext> options)
             : base(options)
         {
         }

@@ -30,9 +30,9 @@ namespace TodoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("TodoListContext")));
-            
+            services.AddDbContext<TodoItemContext>(opt =>
+                opt.UseSqlServer(Configuration.GetConnectionString("DBContext")));
+                
             services.AddControllers();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
